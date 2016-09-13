@@ -38,5 +38,13 @@ h1 {
 	div {
 		clear: both;
 	}
-	
+
+	div#box {
+		width: 100%;
+	}
+
+	div#thing {
+		width: 100%;
+	}
+
 }
