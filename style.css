@@ -2,15 +2,19 @@ body {
 	background-color: blue;
 }
 
-section#header {
+
+#header {
 	background: url(https://hd.unsplash.com/photo-1469614369149-4f0c1468c331) no-repeat center top;
 	background-size: cover;
 	position: fixed;
 	height: 90%;
 	bottom: 10%;
+	right: 0;
+	left: 0;
+	top: 0;
 }
-.center {
-	background: rgba(0,0,0,0.25);
+#header .center {
+	background: rgba(0, 0, 0, 0.25);
 	text-align: center;
 	position: absolute;
 	color: #FFFFFF;
@@ -20,26 +24,28 @@ section#header {
 	left: 0;
 	top: 0;
 }
-
-.middle {
+#header .center .middle {
 	position: absolute;
 	margin-top: -8em;
 	right: 0;
 	left: 0;
 	top: 50%;
 }
-h1 {
+#header .center .middle h1 {
 	font-weight: normal;
 	line-height: 1em;
-	font-size: 4em;
+	font-size: 11em;
 	margin: 0;
 }
 
 
-
-section {
-	display: inline;
-}
+section#content {
+	position: absolute;
+	right: 0px;
+	left: 0px;
+	top: 90%;
+	z-index: 10;
+};
 
 div#thing {
 	/*margin-left: 50%;*/
