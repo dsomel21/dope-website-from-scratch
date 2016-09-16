@@ -7,6 +7,18 @@ body {
 	background-color: purple;
 }
 
+ul#slideshow {
+	position: absolute;
+	width: 100%;
+	border: 1px solid red;
+}
+
+header h1#title {
+	color: red;
+	text-align: center;
+	top: 50px;
+}
+
 img#image {
 	position: relative;
 	width: 100vw;
