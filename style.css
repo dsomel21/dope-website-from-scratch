@@ -9,7 +9,7 @@ body {
 
 img#image {
 	position: relative;
-	width: 100%;
+	width: 100vw;
 	height: auto;
 	max-height: 350px;
 	z-index: -1;
@@ -57,9 +57,9 @@ div.layers {
 	height: 300px;
 }
 
-/*@media only screen and (max-width: 800px) and (orientation:landscape) {
+@media only screen and (max-width: 800px) and (orientation:landscape) {
 
-}*/
+}
 
 @media only screen and (max-width: 700px) and (orientation:portrait) {
 	body {
