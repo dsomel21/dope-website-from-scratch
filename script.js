@@ -3,7 +3,7 @@ var yPos;
 var backgroundImage;
 
 window.addEventListener('scroll', function(){
-	// debugger;
+	debugger;
 	yPos = window.pageYOffset;
 	backgroundImage = document.getElementById('image');
 	backgroundImage.style.top = yPos * .4 + "px";

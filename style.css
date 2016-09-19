@@ -9,6 +9,14 @@
 	box-sizing: border-box;
 }
 
+p {
+	font-family: 'Roboto', sans-serif;
+	font-weight: lighter;
+	line-height: 25px;
+  width: 300px;
+
+}
+
 ul.slideshow {
 	margin: 0;
 	width: 100%;
@@ -20,6 +28,7 @@ ul.slideshow li {
 	position: absolute;
 	width: 100%;
 	height: 100%;
+	overflow: hidden;
 }
 
 ul.slideshow li img {
@@ -45,43 +54,41 @@ header h1#title {
 	background-color: #4DBBAC;
 	position: relative;
 	z-index: 1;
-}
-
-div#thing {
-	/*margin-left: 50%;*/
-	float: left;
-	background-color: orange;
-	width: 50%;
-	height: 300px;
+	display: inline-block;
 }
 
 /* SUB CATEGORIES */
-
 .submenu {
 	width: 100%;
+	display: inline-block;
 }
 
-div:nth-child(even) .info {
+.submenu:nth-child(even) {
 	background-color: white;
 	color: black;
 }
 
-div:nth-child(odd) .info {
+.submenu:nth-child(odd) {
 	background-color: black;
 	color: white;
+}
+
+.submenu:nth-child(even) .info{
+	float: left;
+}
+
+.submenu:nth-child(odd) .info {
+	float: right;
 }
 
 .info {
 	width: 30%;
 }
 
+.info > h1 { 
+	font-family: 'Noto Serif', serif;
+ }
 
-div#box {
-	background-color: red;
-	width: 50%;
-	height: 300px;
-	float: right;
-}
 h1 {
 	font-size: 10vh;
 	font-family: 'Roboto', sans-serif;
@@ -142,6 +149,7 @@ h1 {
 .layers:nth-of-type(5) { background:#2c3e50 }
 
 div.layers {
+	clear: both;
 	width: 100%;
 	height: 300px;
 }
