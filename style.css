@@ -10,10 +10,10 @@
 }
 
 p {
-	font-family: 'Roboto', sans-serif;
-	font-weight: lighter;
-	line-height: 25px;
-  width: 300px;
+	font-family: 'Open Sans', sans-serif;
+	/*font-weight: lighter;*/
+	line-height: 100%;
+  width: 70%;
 
 }
 
@@ -82,7 +82,24 @@ header h1#title {
 }
 
 .info {
-	width: 30%;
+	width: 40%;
+	border: 1px red dashed;
+}
+
+.info > p {
+	border: 1px blue dashed;
+	font-size: 2em;
+	position: relative;
+	right: -15%;
+
+}
+
+div.block {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 300px;
+	height: 8px;
+	background-color: red;
 }
 
 .info > h1 { 
