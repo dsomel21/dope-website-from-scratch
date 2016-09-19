@@ -4,9 +4,9 @@
 	box-sizing: border-box;
 }
 *, *:before, *:after {
-  -webkit-box-sizing: border-box; 
-  -moz-box-sizing: border-box; 
-  box-sizing: border-box;
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
 }
 
 ul.slideshow {
@@ -53,7 +53,28 @@ div#thing {
 	background-color: orange;
 	width: 50%;
 	height: 300px;
-	}
+}
+
+/* SUB CATEGORIES */
+
+.submenu {
+	width: 100%;
+}
+
+div:nth-child(even) .info {
+	background-color: white;
+	color: black;
+}
+
+div:nth-child(odd) .info {
+	background-color: black;
+	color: white;
+}
+
+.info {
+	width: 30%;
+}
+
 
 div#box {
 	background-color: red;
