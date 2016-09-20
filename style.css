@@ -13,7 +13,7 @@ p {
 	font-family: 'Open Sans', sans-serif;
 	/*font-weight: lighter;*/
 	line-height: 100%;
-  width: 70%;
+	width: 70%;
 
 }
 
@@ -59,8 +59,45 @@ header h1#title {
 
 /* SUB CATEGORIES */
 .submenu {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
 	width: 100%;
-	display: inline-block;
+	z-index: 80;
+}
+
+article {
+	position: relative;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-align: center;
+	justify-content: center;
+	width:  40%;
+}
+
+summary {
+	height: 300px;
+	width: 300px;
+}
+
+.image_space {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	width: 60%;
+	height: 100%;
+	border-color: 11px orange solid;
+	background-color: #e4dcd6;
+	position: relative;
 }
 
 .submenu:nth-child(even) {
@@ -104,7 +141,7 @@ div.block {
 
 .info > h1 { 
 	font-family: 'Noto Serif', serif;
- }
+}
 
 h1 {
 	font-size: 10vh;
