@@ -2,6 +2,7 @@
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
+	font-size: 100%;
 }
 *, *:before, *:after {
 	-webkit-box-sizing: border-box; 
@@ -10,10 +11,10 @@
 }
 
 p {
-	font-family: 'Open Sans', sans-serif;
-	/*font-weight: lighter;*/
-	line-height: 100%;
-	width: 70%;
+	font-family: 'Roboto', sans-serif;
+	font-weight: lighter;
+	line-height: 25px;
+	width: 300px;
 
 }
 
@@ -66,24 +67,41 @@ header h1#title {
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	width: 100%;
+}
+
+#about {
+	border: 1px blue solid;
+	width: 100%;
+	height: 450px;
+	position: relative;
 	z-index: 80;
 }
 
-article {
+.info {
+	border: 5px green dashed;
 	position: relative;
 	display: -webkit-box;
 	display: flex;
 	-webkit-box-align: center;
 	justify-content: center;
 	width:  40%;
+	height: 100%;
+	background: orange;
+}
+
+#test {
+	-webkit-box-ordinal-group: 2;
+	-ms-flex-order: 1;
+	order: 1;
 }
 
 summary {
+	border: 4px dashed yellow;
 	height: 300px;
 	width: 300px;
 }
 
-.image_space {
+div.image_space {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -95,8 +113,7 @@ summary {
 	align-items: center;
 	width: 60%;
 	height: 100%;
-	border-color: 11px orange solid;
-	background-color: #e4dcd6;
+	background-color: purple;
 	position: relative;
 }
 
@@ -118,114 +135,115 @@ summary {
 	float: right;
 }
 
-.info {
+/*.info {
 	width: 40%;
 	border: 1px red dashed;
-}
+	}*/
 
-.info > p {
-	border: 1px blue dashed;
-	font-size: 2em;
-	position: relative;
-	right: -15%;
+	.info > p {
+		border: 1px blue dashed;
+		font-size: 2em;
+		position: relative;
+		right: -15%;
 
-}
-
-div.block {
-	margin-top: 20px;
-	margin-bottom: 20px;
-	width: 140px;
-	height: 8px;
-	background-color: red;
-}
-
-.info > h1 { 
-	font-family: 'Noto Serif', serif;
-}
-
-h1 {
-	font-size: 10vh;
-	font-family: 'Roboto', sans-serif;
-	text-align: center;
-	/*margin-top: 20vh;*/
-}
-
-/* Testing out 3D text animation */
-.boxContainer {
-	width: 100%;
-	height: 150px;
-	line-height: 150px;
-	position: relative;
-	/*text-align: center;*/
-	perspective: 800px;
-}
-
-#card {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	transform-style: preserve-3d;
-	transition: transform 0.5s;
-}
-
-#card figure {
-	/*margin-top: 10px;*/
-	margin: 0;
-	display: block;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	backface-visibility: hidden;
-}
-
-#card figure h1 {
-	color: red;
-}
-
-#card .front {
-	background: #FF69B4;
-}
-
-#card .bottom {
-	background: #7CFC00;
-	transform: rotateX(180deg);
-}
-
-#card.flipped {
-	transform: rotateX(180deg);
-}
-
-/* Temporary to take up some space  */
-.layers:nth-of-type(1) { background:#16a085 }
-.layers:nth-of-type(2) { background:#f1c40f }
-.layers:nth-of-type(3) { background:#27ae60 }
-.layers:nth-of-type(4) { background:#2980b9 }
-.layers:nth-of-type(5) { background:#2c3e50 }
-
-div.layers {
-	clear: both;
-	width: 100%;
-	height: 300px;
-}
-
-@media only screen and (max-width: 800px) and (orientation:landscape) {
-
-}
-
-@media only screen and (max-width: 700px) and (orientation:portrait) {
-	body {
-		background-color: yellow;
 	}
-	div {
+
+	div.block {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		width: 140px;
+		height: 8px;
+		background-color: red;
+	}
+
+	.info h1 { 
+		font-family: 'Noto Serif', serif;
+	}
+
+	h1 {
+		font-size: 10vh;
+		font-family: 'Roboto', sans-serif;
+		text-align: center;
+		/*margin-top: 20vh;*/
+	}
+
+	/* Testing out 3D text animation */
+	.boxContainer {
+		width: 100%;
+		height: 150px;
+		line-height: 150px;
+		position: relative;
+		/*text-align: center;*/
+		perspective: 800px;
+	}
+
+	#card {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		transform-style: preserve-3d;
+		transition: transform 0.5s;
+	}
+
+	#card figure {
+		/*margin-top: 10px;*/
+		margin: 0;
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		backface-visibility: hidden;
+	}
+
+	#card figure h1 {
+		color: red;
+	}
+
+	#card .front {
+		background: #FF69B4;
+	}
+
+	#card .bottom {
+		background: #7CFC00;
+		transform: rotateX(180deg);
+	}
+
+	#card.flipped {
+		transform: rotateX(180deg);
+	}
+
+	/* Temporary to take up some space  */
+	.layers:nth-of-type(1) { background:#16a085 }
+	.layers:nth-of-type(2) { background:#f1c40f }
+	.layers:nth-of-type(3) { background:#27ae60 }
+	.layers:nth-of-type(4) { background:#2980b9 }
+	.layers:nth-of-type(5) { background:#2c3e50 }
+
+	div.layers {
 		clear: both;
-	}
-
-	div#box {
 		width: 100%;
+		height: 300px;
 	}
 
-	div#thing {
-		width: 100%;
+	@media only screen and (max-width: 800px) and (orientation:landscape) {
+
 	}
 
-}
+	@media only screen and (max-width: 700px) and (orientation:portrait) {
+		body {
+			background-color: yellow;
+		}
+		div.layers {
+			width: 50%;
+			background-color: yellow;
+		}
+
+		div#box {
+			width: 100%;
+		}
+
+		div#thing {
+			width: 100%;
+		}
+
+	}
